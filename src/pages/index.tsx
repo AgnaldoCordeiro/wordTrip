@@ -1,7 +1,7 @@
 import { Box, Flex, Stack } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import { Banner } from "../components/Banner";
-import { Carousel } from "../components/Carousel";
+import { Slider } from "../components/Carousel";
 import { Divider } from "../components/Divider";
 import { Header } from "../components/Header";
 import { Travel } from "../components/Travel";
@@ -35,7 +35,7 @@ export default function Home({ continents }: HomeProps) {
           xl: "100px",
         }}
       >
-        <Carousel data={continents} />
+        <Slider data={continents} />
       </Box>
     </Flex>
   );
